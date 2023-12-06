@@ -1,3 +1,4 @@
+![image](https://github.com/Karan9927/Team-2-Projects/assets/128497156/06d83bc7-9e2b-4fa2-9558-30da206cceeb)
 
 Project Structure
 
