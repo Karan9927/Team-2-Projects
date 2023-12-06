@@ -1,4 +1,3 @@
-// Logic
 
 export const TILE_STATUSES = {
 	HIDDEN: "hidden",
@@ -116,7 +115,7 @@ export const TILE_STATUSES = {
   }
   
   function randomNumber(size) {
-	return Math.floor(Math.random() * size);
+	return Math.floor(Math.random() * size)
   }
   
   function nearbyTiles(board, { x, y }) {
