@@ -14,7 +14,6 @@ CSS Grid is employed to structure the grid layout, making it visually consistent
 3. JavaScript Logic:
 The JavaScript code handles the core game logic, including the generation of the Minesweeper board, placement of mines, and user interactions.
 Event listeners are implemented to respond to user clicks, initiating the game's mechanics.
-4. Game Logic:
 
-Functions are provided to check for mines in neighboring cells, reveal cells, and manage the end state of the game (win or lose).
+5. Game Logic: Functions are provided to check for mines in neighbouring cells, reveal cells, and manage the end state of the game (win or lose).
 Advanced features such as a timer, reset button, and recursive algorithms for revealing empty cells contribute to an enriched gaming experience.
