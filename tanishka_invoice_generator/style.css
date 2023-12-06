@@ -261,7 +261,7 @@ body {
     padding: 0 32px;
     font-size: 18px;
     border-radius: 6px;
-    color: #36395a;
+    color: white;
     transition: box-shadow 0.15s ease, transform 0.15s ease;
 
 
@@ -395,7 +395,7 @@ body {
     display: flex;
     /* column-gap: 0.5rem; */
     flex-shrink: 0;
-    background-color: #e45c9e;
+    background-color: #d691b2;
     justify-content: space-between;
     /* gap: 1rem; */
 

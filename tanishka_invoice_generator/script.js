@@ -221,8 +221,6 @@ function validData() {
   else {
     return true
   }
-
-
 }
 
 
