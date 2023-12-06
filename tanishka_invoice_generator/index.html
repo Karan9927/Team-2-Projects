@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<!-- --------------------DETAIL PAGE------------------- -->
+
+    <div class="details">
+
+
+<!-- ---------------------INPUT TAG FOR DETAIL PURPOSE------------------ -->
+        <div class="input-detail">
+            <div class="Input-head">
+                
+                <label for="" >Invoice Number</label>
+            </div>
+
+            <section class="conti">   
+                <div class="invnum">
+                    <input id="invoNo" type="number" class="input-css" placeholder="Invoice Number">
+                </div>
+            </section>
+        </div>
+        <!-- --------------------DATE OF ISSUE--------------- -->
+        <div class="date">
+            <div class="Input-head" >
+                <label for="">Issue date</label>
+                <label for="">Due Date</label>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: space-between;">
+                <input type="date" class="date-in" style= "width:190px" id="dateIss">
+            <input id="payT" class="date-in" type="date" style= "width:190px">
+            </div>
+
+        </div>
+
+<!-- ------------------TEXTAREA ADDRESS AND CUSTOMER NAME--------- -->
+        <div style="width: 100%; display: flex;flex-direction: column; align-items: center;">
+            <div class="Input-head">
+                <label for="">Company Details</label>
+                <label for="">Bill to</label>
+            </div>
+            <div class="conti">
+                <textarea name="" id="company" cols="100" rows="4" maxlength="40" placeholder="company name"></textarea>
+            <textarea name="" id="BillTo" cols="100" rows="4" maxlength="30" placeholder="company name"></textarea>
+            </div>
+            <div class=" conti">
+                <textarea name="" cols="100" rows="4" maxlength="40" placeholder="Email Address"></textarea>
+            <textarea name="" id="email" cols="100" rows="4" maxlength="30" placeholder="Email Address"></textarea>
+            </div>
+            <div class=" conti">
+                <textarea name="" id="address" cols="100" rows="4" maxlength="40" placeholder="Billing Address"></textarea>
+            <textarea name="" id="address" cols="100" rows="4" maxlength="30" placeholder="Billing Address"></textarea>
+            </div>
+
+        </div>
+       
+
+
+<!-- ---------------------LIST OF ITEMS--------------->
+        <div class="List">
+            <div class="List-head">
+                <h4 id="text">List of items</h4>
+                <h4>Price</h4>
+                <h4>Qty</h4>
+                <h4>Amount</h4>
+            </div>
+            <ol class="list-item">
+                <li class="item">
+                    <input type="text" name="" id="text" class="lis-css" required>
+                <input type="number" id="number1" required class="lis-css">
+                <input type="number" id="number2" required value="1" class="lis-css">
+                <input class="total" type="number" id="total" value="" required class="lis-css">
+        <button class="add">add</button>
+        <div id="error-box"></div>
+                    
+                </li>
+            </ol>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+<!-- -----------ADDITONAL INFO----------------- -->
+        <div class="Add-de">
+
+            <!-- -------------------NOTE TEXTAREA------------------ -->
+            <div>
+                <label for="">Notes:-</label>
+                <br>
+                <textarea name="" id="note" cols="30" rows="4"></textarea>
+            </div>
+
+<!-- ----------------SUB TOTAL----------------- -->
+            <div class="subC">
+                <h2 style="text-align: right;">Sub Total :- <span class="subA">0</span></h2>
+                <div class="charge">
+                    <div>
+                        <p>Tax :-</p>
+                        <p>Discount :-</p>
+                        <p>Shipping Charge :-</p>
+                    </div>
+                    <div class="charge-Input">
+                        <input class="charge-put-Tax" type="number" name="" id="" value="0"><input
+                            class="charge-put-Dis" type="number" name="" id="" value="0"><input class="charge-put-ship"
+                            type="number" name="" id="" value="0">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+<!-- ---------------------BUTTOM TO GENERATE INVOICE--------------- -->
+        <button class="generate">Done</button>
+
+    </div>
+
+
+<!-- ------------------PREVIEW---------------- -->
+    <div class="invoice" id="invo">
+
+<!-- ------------------SAVE AND PRINT---------------- -->
+        <div class="print">
+            <h1 style="padding-bottom: 20px;" class="priv">
+                Invoice
+            </h1>
+            
+        </div>
+<!-- ----------------------INVOICE HEADER---------------------- -->
+        <div class="page" id="page">
+            <div class="logo">
+                <p style="text-align: right ;font-size: 1.2rem; font-weight: 800;">Invoice No :- <span id="invNoDA" style="font-weight: 600;color: rgb(32, 88, 219);margin-right: 50px;"></span></p>
+            </div>
+            <div class="summary">
+                <p>Receipt</p>
+                <div class="hr"></div>
+            </div>
+<!-- -----------------INVOICE ITEMS-------------- -->
+            <ol class="all-detail">
+                <li id="com"></li>
+                <li id="em"></li>
+                <li id="bill"></li>
+                <li>
+                    <p>Date Issued:- <span id="date-at"></span></p>
+                    <p>Due Date:- <span id="termAt"></span></p>
+                </li>
+            </ol>
+            <div class="cont">
+                <div class="list-Head">
+                    <h2 style="width: 50%; text-align: center;">List of items</h2>
+                    <h2>Price</h2>
+                    <h2>Qty</h2>
+                    <h2>Amount</h2>
+                </div>
+                <ol class="list-items">
+
+                </ol>
+            </div>
+
+ <!-- ----------------------INVOICE ADDITIONAL CHARGES------- -->
+            <div class="Additional">
+                <div>
+                    <p>SubTotal :-</p>
+                    <p>Tax :-</h3>
+                    <p>Discount :-</p>
+                    <p>Shipping Fee :-</p>
+                </div>
+                <div class="pric">
+                    <p class="sub-A">0</p>
+                    <p class="charge-Tax">0</p>
+                    <p class="charge-Dis">0</p>
+                    <p class="charge-Ship">0</p>
+                    
+                </div>
+                <div class="charge-Add"></div>
+
+            </div>
+            <div class="hr"></div>
+            <p class="inc">Invoice Total :- <span class=" InvoiceTotal"> 0.00</span></p>
+
+<!-- ----------------------INVOICE NOTE AND PAYMENT METHOD-------------- -->
+            <div class="thank">
+                <h1>Notes :- <span id="not"></span></h1>
+                <p>Payment should be done on Time</p>
+                <h2>Thank You. Visit Again!</h2>
+            </div>
+            <div >
+                <button class="btn " id="pri-btn">print</button>
+            <button class="btn" id="save">Download</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ----------------SCRIPT----------- -->
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="https://kit.fontawesome.com/54ac71e1b5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

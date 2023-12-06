@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Trello Clone</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TRELLO CLONE</h1>
+      <form class="add-tasks">
+        <input type="text" id="tasks-input" placeholder="Add your Tasks here" />
+        <button type="submit">Add Task</button>
+      </form>
+      <div class="main-task-container">
+        <div class="task-container" id="todo-task">
+          <h3 class="heading">Backlog</h3>
+          <!-- <div class="text" draggable="true">
+                <p class="task" >Go to gym </p>
+                <i class="material-icons" style="font-size:18px;">delete</i>
+            </div> -->
+            <button class="btn" id="todo">Add your task</button>
+        </div>
+        <div class="task-container" id="doing-task">
+          <h3 class="heading"> To Do</h3>
+          <!-- <div class="text" draggable="true">
+                <p class="task" >Go to gym </p>
+                <i class="material-icons" style="font-size:18px;">delete</i>
+            </div> -->
+            <button class="btn" id="doing">Add your task</button>
+        </div>
+        <div class="task-container" id="done-task">
+          <h3 class="heading">In Progress</h3>
+          <!-- <div class="text" draggable="true">
+                <p class="task" >Go to gym </p>
+                <i class="material-icons" style="font-size:18px;">delete</i>
+            </div> -->
+            <button class="btn" id="done">Add your task</button>
+        </div>
+        <div class="task-container" id="done-task">
+          <h3 class="heading">Done</h3>
+          <!-- <div class="text" draggable="true">
+                <p class="task" >Go to gym </p>
+                <i class="material-icons" style="font-size:18px;">delete</i>
+            </div> -->
+            <button class="btn" id="hold">Add your task</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{   
+    "manifest_version": 3,
+    "name": "YT Timestamp Bookmarker",
+    "version": "1.1.0",
+    "description": "Bookmark the timestamp of a current YouTube video to watch later",
+    "permissions": ["storage", "tabs", "webNavigation"],
+    "host_permissions": ["https://*.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons":{
+      "16":"./assets/bookmarky.png",
+      "32":"./assets/bookmarky.png",
+      "48":"./assets/bookmarky.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/timestamp.png",
+          "assets/playIcon.png",
+          "assets/deleteIcon.png",
+          "assets/save.png"
+        ],
+        "matches": ["https://*.youtube.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/bookmarky.png",
+        "32": "assets/bookmarky.png",
+        "48": "assets/bookmarkSign.png",
+        "128":"assets/bookmarkSign.png"
+      },
+      "default_title": "YT Bookmarker",
+      "default_popup": "popup.html"
+    }
+    
+}
