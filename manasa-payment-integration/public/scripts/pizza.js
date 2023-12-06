@@ -53,13 +53,24 @@ function handleEvent(e) {
     let matchesId = currId.match(/(\d+)/);
     pizzaData.forEach((item) => {
       if (item.id == matchesId[0]) {
-        cart.push({
-          id: item.id,
-          name: item.name,
-          price: item.price,
-          quantity: 1,
-          img: item.img,
+        const isPresent = cart.some((cartItem) => {
+          return cartItem.id === item.id;
         });
+        if (!isPresent) {
+          cart.push({
+            id: item.id,
+            name: item.name,
+            price: item.price,
+            quantity: 1,
+            img: item.img,
+          });
+        } else {
+          cart.forEach((cartItem) => {
+            if (cartItem.id === item.id) {
+              cartItem.quantity++;
+            }
+          });
+        }
         document.getElementById(`incrementBtn${item.id}`).style.display =
           "flex";
         btnValue(item.id, item.quantity);
@@ -107,7 +118,6 @@ function updateCart(incrementValue) {
 
   const displayCartTotal = document.getElementById("displayCartTotal");
 
-  console.log(cartTotalItems);
   displayCartTotal.innerText = `${cartTotalItems} item${
     cartTotalItems > 1 ? "s" : ""
   } added`;
