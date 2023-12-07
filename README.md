@@ -18,7 +18,7 @@ Welcome to the project repository! This repository contains five distinct projec
 
 ### 4. 📋 Trello Clone
 - **Description:** Boost team collaboration and project management with this Trello-inspired tool. Create boards, lists, and cards to organize tasks effectively. With features like task assignment and real-time updates, this Trello Clone helps streamline workflows and improve productivity.
-- **Hosted Link:** [https://shikhasharma06.github.io/Trello-board-clone/()
+- **Hosted Link:**   [Link for trello clone](https://shikhasharma06.github.io/Trello-board-clone/)
   
 ### 5. ⛏️ Minesweeper
 - **Description:** Experience the classic Minesweeper game in a web format. Test your logical deduction skills by uncovering hidden mines on a grid. With varying difficulty levels, this game offers a blend of strategy and memory for an engaging gaming experience.
