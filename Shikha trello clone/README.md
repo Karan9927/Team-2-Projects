@@ -2,6 +2,8 @@ Trello
 Host Link:-
 https://shikhasharma06.github.io/Trello-board-clone/
 
+
+ Video link  https://www.awesomescreenshot.com/video/23082851?key=fd8c40803f51405b6665009558c805ea
 Overview
 This project is a Trello-like board, designed for managing tasks and projects using an Agile approach. It provides a user-friendly interface with drag-and-drop functionality for easy task management.
 
