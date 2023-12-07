@@ -27,8 +27,7 @@ Welcome to the project repository! This repository contains five distinct projec
 ### 6. 💳 Payment Integration
 
 - **Description:** Simple and efficient online ordering system for a pizza restaurant. It allows users to browse the menu, place orders, and seamlessly complete transactions using Razorpay payment integration.
-- **Project Link:** [Link for Payment Integration](https://github.com/Karan9927/Team-2-Projects/tree/main/manasa-payment-integration
-)
+- **Hosted Link:** [Link for Payment Integration](https://popeyes-pizza.onrender.com)
 
 
 ### Enjoy exploring the projects! If you have any questions or feedback, feel free to reach out.
