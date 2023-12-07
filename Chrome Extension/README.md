@@ -1,5 +1,9 @@
 # YouTube TimeStamp Bookmarker
 
+## It works like 👇
+
+[video link](https://www.loom.com/share/8d060ba09497487ebed84ff540ba324c?sid=6b6b7c14-2480-4537-8490-bb620db92ac1)
+
 YT Bookmarker is a Chrome extension that enhances the experience of watching YouTube videos by allowing users to create and manage bookmarks with custom notes at specific timestamps in YouTube videos.
 
 ## Youtube Bookmarker - without bookmark
